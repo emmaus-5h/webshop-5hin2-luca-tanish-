@@ -1,5 +1,11 @@
 /* all pages */
 
+body {
+  background-color: rgb(0, 148, 0);
+}
+
+
+
 footer {
   margin: 20px;
   font-size: 12px;
