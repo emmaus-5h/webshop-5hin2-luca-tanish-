@@ -2,6 +2,14 @@
 -- create tables
 --
 
+-- feedback GEE 30 jan 2024
+-- jullie hebben pas 1 tabel
+-- je moet er minimaal 5 hebben )(zie de beoordelingscriteria in de opdracht)
+-- die tabellen zijn met elkaar verbonden via 1:n of n:m relaties
+-- bekijk eens de video uit de opdracht over tabellen toeveogen voor inspriratie
+-- een voorbeeld van een extra tabel die voor bijna alles wat je verkoopt kan is "merk"
+
+
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   code VARCHAR(15),
