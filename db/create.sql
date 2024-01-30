@@ -19,11 +19,11 @@ CREATE TABLE products (
   kleur VARCHAR(15)
 );
 
-CREATE TABLE vacht {
+CREATE TABLE vacht (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur varchar(15),
   patroon VARCHAR(15)
-}
+);
 
 
 --
@@ -43,8 +43,10 @@ insert into products (name, description, code, price, kleur) values ('Kiss for C
 insert into products (name, description, code, price, kleur) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '6', 14, 'geel');
 insert into products (name, description, code, price, kleur) values ('kaaskoe', 'kaaskoe', '7', 881, 'lololololkololololol');
 insert into products (name, description, code, price, kleur) values ('kleine kipje', 'kleine kip', '8', 451, 'lichybaae');
-insert into products (name, description, code, price, kleur) values ('lelijk schaap', 'niet zo mooi schaap', '9', 122, koolswar);
+insert into products (name, description, code, price, kleur) values ('lelijk schaap', 'niet zo mooi schaap', '9', 122, 'koolswart');
 insert into products (name, description, code, price, kleur) values ('normale koe', 'koe', '10', 17, 'groen');
+insert into products (name, description, code, price, kleur) values ('kalf', 'kleine koe','11', 129, 'wit');
+insert into products (name, description, code, price, kleur) values ('eend', 'water vogel', '12', 2, 'groen');
 
 insert into vacht (id, kleur, patroon) values ('1', 'wit', 'gevlekt');
 insert into vacht (id, kleur, patroon) values ('2', 'bruin', 'gestipt');
@@ -56,7 +58,8 @@ insert into vacht (id, kleur, patroon) values ('7', 'geel', 'gaten');
 insert into vacht (id, kleur, patroon) values ('8', 'wit', 'gevlekt');
 insert into vacht (id, kleur, patroon) values ('9', 'zwart', 'glad');
 insert into vacht (id, kleur, patroon) values ('10', 'wit', 'gevlekt');
-
+insert into vacht (id, kleur, patroon) values ('11', 'zwart', 'glad');
+insert into vacht (id, kleur, patroon) values ('12', 'wit', 'gevlekt');
 
 
 
