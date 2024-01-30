@@ -19,9 +19,18 @@ CREATE TABLE products (
   kleur VARCHAR(15)
 );
 
-CREATE TABLE vacht (
+CREATE TABLE kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur varchar(15),
+  kleur varchar(15)
+);
+
+CREATE TABLE soort {
+  id VARCHAR(15),
+  soort VARCHAR(15)
+};
+
+CREATE TABLE patroon (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   patroon VARCHAR(15)
 );
 
@@ -48,18 +57,20 @@ insert into products (name, description, code, price, kleur) values ('normale ko
 insert into products (name, description, code, price, kleur) values ('kalf', 'kleine koe','11', 129, 'wit');
 insert into products (name, description, code, price, kleur) values ('eend', 'water vogel', '12', 2, 'groen');
 
-insert into vacht (id, kleur, patroon) values ('1', 'wit', 'gevlekt');
-insert into vacht (id, kleur, patroon) values ('2', 'bruin', 'gestipt');
-insert into vacht (id, kleur, patroon) values ('3', 'groen', 'gestreept');
-insert into vacht (id, kleur, patroon) values ('4', 'wit', 'gevlekt');
-insert into vacht (id, kleur, patroon) values ('5', 'zwart', 'albino');
-insert into vacht (id, kleur, patroon) values ('6', 'velvet rood', 'cheesecake');
-insert into vacht (id, kleur, patroon) values ('7', 'geel', 'gaten');
-insert into vacht (id, kleur, patroon) values ('8', 'wit', 'gevlekt');
-insert into vacht (id, kleur, patroon) values ('9', 'zwart', 'glad');
-insert into vacht (id, kleur, patroon) values ('10', 'wit', 'gevlekt');
-insert into vacht (id, kleur, patroon) values ('11', 'zwart', 'glad');
-insert into vacht (id, kleur, patroon) values ('12', 'wit', 'gevlekt');
+insert into kleur (id, kleur, patroon) values ('1', 'wit', 'gevlekt');
+insert into kleur (id, kleur, patroon) values ('2', 'bruin', 'gestipt');
+insert into kleur (id, kleur, patroon) values ('3', 'groen', 'gestreept');
+insert into kleur (id, kleur, patroon) values ('4', 'wit', 'gevlekt');
+insert into kleur (id, kleur, patroon) values ('5', 'zwart', 'albino');
+insert into kleur (id, kleur, patroon) values ('6', 'velvet rood', 'cheesecake');
+insert into kleur (id, kleur, patroon) values ('7', 'geel', 'gaten');
+insert into kleur (id, kleur, patroon) values ('8', 'wit', 'gevlekt');
+insert into kleur (id, kleur, patroon) values ('9', 'zwart', 'glad');
+insert into kleur (id, kleur, patroon) values ('10', 'wit', 'gevlekt');
+insert into kleur (id, kleur, patroon) values ('11', 'zwart', 'glad');
+insert into kleur (id, kleur, patroon) values ('12', 'wit', 'gevlekt');
 
-
+insert into soort (id, soort) values ('1', 'viervoeter');
+insert into soort (id, soort) values ('2', 'gevogelte');
+insert into soort (id, soort) values ('3', 'zeedier');
 
