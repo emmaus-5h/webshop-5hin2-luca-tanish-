@@ -29,7 +29,7 @@ CREATE TABLE Secundairekleur (
 );
 
 CREATE TABLE soort {
-  id VARCHAR(15),
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   soort VARCHAR(15)
 };
 
