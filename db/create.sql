@@ -16,20 +16,16 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
-CREATE TABLE Pimairekleur (
+CREATE TABLE kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur varchar(15)
+  Primairekleur varchar(15),
+  SecundaireKleur varchar(15)
 );
 
-CREATE TABLE Secundairekleur (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur varchar(15)
-);
-
-CREATE TABLE soort {
+CREATE TABLE soort (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   soort VARCHAR(15)
-};
+);
 
 CREATE TABLE patroon (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -52,23 +48,23 @@ insert into products (name, description, code, price) values ('normale koe', 'ko
 insert into products (name, description, code, price) values ('kalf', 'kleine koe','11', 129);
 insert into products (name, description, code, price) values ('eend', 'water vogel', '12', 2);
 
-insert into Primairekleur (id, kleur) values ('1', 'wit');
-insert into Primairekleur (id, kleur) values ('2', 'zwart');
-insert into Primairekleur (id, kleur) values ('3', 'bruin');
-insert into Primairekleur (id, kleur) values ('4', 'groen');
-insert into Primairekleur (id, kleur) values ('5', 'blauw');
-insert into Primairekleur (id, kleur) values ('6', 'grijs');
-insert into Primairekleur (id, kleur) values ('7', 'geel');
-insert into Primairekleur (id, kleur) values ('8', 'rood');
+insert into kleur (id, PrimaireKleur) values('1', 'wit');
+insert into kleur (id, PrimaireKleur) values ('2', 'zwart');
+insert into kleur (id, PrimaireKleur) values ('3', 'bruin');
+insert into kleur (id, PrimaireKleur) values ('4', 'groen');
+insert into kleur (id, PrimaireKleur) values ('5', 'blauw');
+insert into kleur (id, PrimaireKleur) values ('6', 'grijs');
+insert into Kleur (id, PrimaireKleur) values ('7', 'geel');
+insert into kleur (id, PrimaireKleur) values ('8', 'rood');
 
-insert into SecundaireKleur (id, kleur) values ('1', 'wit');
-insert into SecundaireKleur (id, kleur) values ('2', 'zwart');
-insert into SecundaireKleur (id, kleur) values ('3', 'bruin');
-insert into SecundaireKleur (id, kleur) values ('4', 'groen');
-insert into SecundaireKleur (id, kleur) values ('5', 'blauw');
-insert into SecundaireKleur (id, kleur) values ('6', 'grijs');
-insert into SecundaireKleur (id, kleur) values ('7', 'geel');
-insert into SecundaireKleur (id, kleur) values ('8', 'rood');
+insert into Kleur (id, SecundaireKleur) values ('1', 'wit');
+insert into Kleur (id, SecundaireKleur) values ('2', 'zwart');
+insert into Kleur (id, SecundaireKleur) values ('3', 'bruin');
+insert into Kleur (id, SecundaireKleur) values ('4', 'groen');
+insert into Kleur (id, SecundaireKleur) values ('5', 'blauw');
+insert into Kleur (id, SecundaireKleur) values ('6', 'grijs');
+insert into Kleur (id, SecundaireKleur) values ('7', 'geel');
+insert into Kleur (id, SecundaireKleur) values ('8', 'rood');
 
 insert into soort (id, soort) values ('1', 'viervoeter');
 insert into soort (id, soort) values ('2', 'gevogelte');
