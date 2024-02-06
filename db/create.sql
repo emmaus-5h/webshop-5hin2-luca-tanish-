@@ -43,7 +43,7 @@ insert into products (name, description, code, price) values ('holy kow', 'Mauri
 insert into products (name, description, code, price) values ('schaap jesse', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '2', 11);
 insert into products (name, description, code, price) values ('groen paard, The', 'Pellentesque at nulla. Suspendisse potenti.', '3', 13.5);
 insert into products (name, description, code, price) values ('zwaan', 'halve harrt', '4', 13.5);
-insert into products (name, description, code, price) values ('fazant', 'eieren stelen', '5', 14);
+insert into products (name, description, code, price) values ('racistische fazant', 'eieren stelen', '5', 14);
 insert into products (name, description, code, price) values ('egel', 'auw!', '6', 14);
 insert into products (name, description, code, price) values ('kaaskoe', 'kaaskoe', '7', 881);
 insert into products (name, description, code, price) values ('kleine kipje', 'kleine kip', '8', 451);

@@ -200,6 +200,16 @@ for a "Simple inventory list example with crud using : NodeJS, express framework
 - Robert Bakker [Notalifeform](https://www.gihub.com/Notalifeform)<br>
 for help almost 24x7 with many questions and problems and providing basic shop called gitpodnode to be further developed by students on gitpod and deplyed freely on heroku. See https://gitpod.io/#https://github.com/Notalifeform/gitpodnode
 
+HANDIG|
+      |
+      !
+-- vid 5 & 6 zie emmausinformatica
+1.
+API
+-- app.get('/api/products', getProducts) zie index.js. staat dat jein getProducts de code vindt als je /api/products opvraagt
+--SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY name ASC. deze querie moet je aanoassen. let op gebruik AS om verkden een naam te geven. j kan kan ook join gebriuken om 1:n relatie toe t veogen 
 
-
-
+2.
+WEB
+-- <!-- template for product info--> wordt gekopieerd vioir ieder artikel dus alle info die je wil toeveogen meot je in je template toevoegen
+-- in het script voeg je de waarden uit de spi toe aan e webpagina, // voeg product toe aan DOM
