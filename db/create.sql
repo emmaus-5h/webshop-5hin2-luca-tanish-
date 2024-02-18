@@ -16,9 +16,9 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
-CREATE TABLE kleur (
+CREATE TABLE Kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  Primairekleur varchar(15),
+  PrimaireKleur varchar(15),
   SecundaireKleur varchar(15)
 );
 
@@ -48,22 +48,22 @@ insert into products (name, description, code, price) values ('koe', 'koe', '10'
 insert into products (name, description, code, price) values ('kalf', 'kleine koe','11', 129);
 insert into products (name, description, code, price) values ('eend', 'water vogel', '12', 2);
 
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'wit');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'bruin');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'grijs');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'oranje');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'zwart');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'bruin');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'wit');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'bruin');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'grijs');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('zwart', 'oranje');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'zwart');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'bruin');
 insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'grijs');
 insert into kleur (PrimaireKleur,SecundaireKleur ) values ('wit', 'oranje');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'wit');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'zwart');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'bruin');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'oranje');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'wit');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'zwart');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'wit');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'zwart');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'bruin');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'oranje');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'wit');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'zwart');
 insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'grijs');
-insert into kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'oranje');
+insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'oranje');
 
 insert into soort (id, soort) values ('1', 'viervoeter');
 insert into soort (id, soort) values ('2', 'gevogelte');
