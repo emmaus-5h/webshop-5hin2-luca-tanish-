@@ -42,15 +42,15 @@ CREATE TABLE soort_patroon (
 --insertions --->
 
 
-insert into products (name, description, code, price) values ('holy kow', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '1', 10.5);
-insert into products (name, description, code, price) values ('schaap', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '2', 11);
-insert into products (name, description, code, price) values ('paard', 'Pellentesque at nulla. Suspendisse potenti.', '3', 13.5);
+insert into products (name, description, code, price) values ('holy kow', 'heilige koe.', '1', 10.5);
+insert into products (name, description, code, price) values ('schaap', 'wit schaap.', '2', 11);
+insert into products (name, description, code, price) values ('paard', 'mooi robust beest. Suspendisse potenti.', '3', 13.5);
 insert into products (name, description, code, price) values ('zwaan', 'halve harrt', '4', 13.5);
 insert into products (name, description, code, price) values ('fazant', 'eieren stelen', '5', 14);
 insert into products (name, description, code, price) values ('egel', 'auw!', '6', 14);
 insert into products (name, description, code, price) values ('kaaskoe', 'kaaskoe', '7', 881);
 insert into products (name, description, code, price) values ('kip', 'kleine kip', '8', 451);
-insert into products (name, description, code, price) values ('zwart schaap', 'niet zo mooi schaap', '9', 122);
+insert into products (name, description, code, price) values ('zwart schaap', 'mooi schaap met een donkere vacht', '9', 122);
 insert into products (name, description, code, price) values ('koe', 'koe', '10', 17);
 insert into products (name, description, code, price) values ('kalf', 'kleine koe','11', 129);
 insert into products (name, description, code, price) values ('eend', 'water vogel', '12', 2);
@@ -78,6 +78,14 @@ insert into patroon (id, patroon) values('3', 'gaten');
 insert into patroon (id, patroon) values('4', 'gestipt');
 insert into patroon (id, patroon) values('5', 'fade');
 
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
+insert into soort_patroon (soort_id, patroon_id ) values (2, 3);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
+insert into soort_patroon (soort_id, patroon_id ) values (2, 3);
 insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
 insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
 insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
