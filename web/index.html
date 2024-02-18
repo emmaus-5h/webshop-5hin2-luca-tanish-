@@ -60,8 +60,8 @@
 					<ul class="product-properties">
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
-            <li><span class="propert-name">Primaire kleur:</span><span class="product_Kleur1"></span></li>
-            <li><span class="propert-name">Secundaire kleur:</span><span class="product_Kleur2"></span></li>
+           <li><span class="propert-name">Primaire kleur:</span><span class="product_kleur1"></span></li>
+            <li><span class="propert-name">Secundaire kleur:</span><span class="product_kleur2"></span></li>
             <li><span class="propert-name">Soort:</span><span class="product_code"></span></li>
             <li><span class="propert-name">Patroon:</span><span class="product_code"></span></li>
 					</ul>
@@ -123,7 +123,7 @@
               }
               // voeg product toe aan DOM, 
               // zodat deze zichtbaar wordt op de webpagina
-              const clone = template.content.cloneNode(true);
+         const clone = template.content.cloneNode(true); 
               clone.querySelector(".product_title").textContent = name
               clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
@@ -131,10 +131,9 @@
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
-              clone.querySelector(".product_Kleur1").textContent = product.Kleur1
-              container.appendChild(clone)
-            }
-          }
+              clone.querySelector(".product_kleur1").textContent = product.PrimaireKleur
+              clone.querySelector(".product_kleur2").textContent = product.SecundaireKleur
+              container.appendChild(clone) }}
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

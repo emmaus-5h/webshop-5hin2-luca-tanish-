@@ -32,6 +32,13 @@ CREATE TABLE patroon (
   patroon VARCHAR(15)
 );
 
+CREATE TABLE soort_patroon (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  patroon_id VARCHAR(15)
+  soort_id VARCHAR(15)
+);
+
+
 --insertions --->
 
 
@@ -60,10 +67,6 @@ insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'wit');
 insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'zwart');
 insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'bruin');
 insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('grijs', 'oranje');
-insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'wit');
-insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'zwart');
-insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'grijs');
-insert into Kleur (PrimaireKleur,SecundaireKleur ) values ('bruin', 'oranje');
 
 insert into soort (id, soort) values ('1', 'viervoeter');
 insert into soort (id, soort) values ('2', 'gevogelte');
@@ -74,3 +77,8 @@ insert into patroon (id, patroon) values('2', 'gestreept');
 insert into patroon (id, patroon) values('3', 'gaten');
 insert into patroon (id, patroon) values('4', 'gestipt');
 insert into patroon (id, patroon) values('5', 'fade');
+
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
+insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
