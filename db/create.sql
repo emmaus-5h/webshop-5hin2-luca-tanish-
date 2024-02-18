@@ -32,7 +32,7 @@ CREATE TABLE patroon (
   patroon VARCHAR(15)
 );
 
-CREATE TABLE soort_patroon (
+CREATE TABLE soortpatroon (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   patroon_id VARCHAR(15),
   soort_id VARCHAR(15)
@@ -78,15 +78,15 @@ insert into patroon (id, patroon) values('3', 'gaten');
 insert into patroon (id, patroon) values('4', 'gestipt');
 insert into patroon (id, patroon) values('5', 'fade');
 
-insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
-insert into soort_patroon (soort_id, patroon_id ) values (2, 3);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
-insert into soort_patroon (soort_id, patroon_id ) values (2, 3);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 2);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 3);
-insert into soort_patroon (soort_id, patroon_id ) values (1, 4);
-insert into soort_patroon (soort_id, patroon_id ) values (2, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 2);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 4);
+insert into soortpatroon (soort_id, patroon_id ) values (2, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 2);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 4);
+insert into soortpatroon (soort_id, patroon_id ) values (2, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 2);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 3);
+insert into soortpatroon (soort_id, patroon_id ) values (1, 4);
+insert into soortpatroon (soort_id, patroon_id ) values (2, 3);
