@@ -67,7 +67,7 @@ function getCategories(request, response) {
 function getProducts(request, response) {
   console.log('API ontvangt /api/products/', request.query)
   let data = []
-  const sqlOpdracht = db.prepare('SELECT * FROM products JOIN Kleur ON Kleur.id = products.id ORDER BY products.id ASC')
+  const sqlOpdracht = db.prepare('SELECT * FROM products JOIN Kleur ON Kleur.id = products.id JOIN product_soort ON product_soort.product_id = products.id JOIN soort ON soort.id = product_soort.soort_id JOIN soort_patroon ON soort_patroon.soort_id = soort.id JOIN patroon ON patroon.id = soort_patroon.patroon_id ORDER BY products.id ASC')
   data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
@@ -87,7 +87,7 @@ function getProductById(request, response) {
 /*
 const getRelatedProductsById = (request, response) => {
   const id = parseInt(request.params.id)
-  // TODO: change query to return related products
+  // TODO: change query to return related products (JOIN patroon_soort ON)
   // it now return an array with the current products
   pool.query('SELECT * FROM products WHERE id = $1', [id], (error, results) => {
     if (error) {
